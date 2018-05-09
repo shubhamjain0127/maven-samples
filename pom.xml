@@ -10,7 +10,15 @@
   <name>Parent</name>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
 
-  <modules>
+         <distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Webapplication</name>
+         <url>http://127.0.0.1:8181</url>
+       </repository>
+   </distributionManagement>
+ 
+         <modules>
     <module>multi-module</module>
     <module>single-module</module>
   </modules>
